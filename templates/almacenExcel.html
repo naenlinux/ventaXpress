@@ -1,0 +1,23 @@
+
+        <table>
+            <thead>
+                <tr>
+                    <th >Producto</th>
+                    <th >Stock U/M</th>
+                    <th >Stock x Unidad</th>
+                    <th >S/ Compra</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for almac in almacen %}
+                <tr>
+                    <td>{{almac.idProducto.nombre}}</td>
+                    <td>{{almac.cantidad}}</td>
+                    <td>{{almac.total}}</td>
+                    <td>{{almac.precioCompra}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            
+        </table>
+

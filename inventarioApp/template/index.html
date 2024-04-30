@@ -1,0 +1,19 @@
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tu Aplicación Vue.js</title>
+    {% load render_bundle from webpack_loader %}
+    {% render_bundle 'chunk-vendors' 'js' %}
+    {% render_bundle 'app' 'js' %}
+</head>
+<body>
+<h2>Integrando vue</h2>
+<div id="app"></div>
+
+<!-- Incluir el archivo generado por Webpack -->
+{% render_bundle 'app' 'js' %}
+</body>
+</html>

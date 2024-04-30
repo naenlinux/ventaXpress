@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<body>
+    <br><br>
+<div style="width: 100%;">
+    <div style="width: 70%; margin: auto;">
+        <img src="http://localhost/static/img/Logo.png" alt="" style="width: 100%;">
+    </div>
+</div>
+<div style="width: 100%;">
+    <div style="width: 100%;float: left;margin: auto;">
+        {% if venta.activo == False %}
+            <p style="text-align: right;color: red;">COMPROBANTE ANULADO!</p>
+        {% endif %}
+    </div>
+</div>
+<div style="width: 100%;">
+    <div style="width: 100%; margin: auto;padding-top: 10px;">
+        <p class="nonemargin text-center"><strong>{{empresa.nombre}}</strong></p>
+        <p class="nonemargin text-center">Direccion: {{empresa.direccion}}</p>
+        <p class="nonemargin text-center">Correo: {{empresa.correo}}</p>
+        <p class="nonemargin text-center">Telefono: {{empresa.telefono}}</p>
+    </div>
+    <div style="width: 100%;padding-top: 0px;padding-bottom: 0px;margin-bottom: 20px;font-size: 10pt">
+        <p class="text-center" style="margin-bottom: 0px;">RUC: {{empresa.ruc}}</p>
+        <p class="text-center nonemargin" style="background: #e9e9e9;padding: 3px;font-size: 10pt">
+            <strong>{{venta.tipComprobante.nombre}}</strong>
+        </p>
+        <p class="text-center" style=" margin-top: 0px; font-size: 10pt;">
+            {{venta.serie}}-{{venta.numComprobante}}
+        </p>
+    </div>
+</div>
+<div style="width: 100%;;">
+    <p>
+        {{venta.fecha}}
+    </p>
+</div>
+<div style="width: 100%;">
+      
+    <p class="nonemargin"><strong>Cliente:</strong> {{venta.idPedido.cliente}}</p> 
+    <p class="nonemargin"><strong>N° Documento:</strong> {{venta.idPedido.cliente_doc}}</p>
+    <p class="nonemargin"><strong>Dirección:</strong> {{venta.idPedido.cliente_dir}}</p>
+    
+</div>
+<br>
+<div style="width: 100%;">
+    <table style="width: 100%;">
+        <thead>
+            <tr>
+                <th>Cant</th>
+                <th>Producto</th>                
+                <th>Precio</th>
+                <th style="text-align: right;">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for detalle in detalles %}
+            <tr>
+                <td>{{detalle.cantidad}}</td>
+                <td>{{detalle.producto}}</td>                
+                <td>{{detalle.precio}}</td>
+                <td style="text-align: right;">{{detalle.costo_bruto}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                
+                <td colspan="3" style="text-align: right;">Venta en Bruto</td>
+                <td style="text-align: right;">{{imporSinDscto}}</td>
+            </tr>
+            <tr>
+                
+                <td colspan="3" style="text-align: right;">Total de descuentos</td>
+                <td style="text-align: right;">{{dscto_total}}</td>
+            </tr>
+            <tr>
+                
+                <td colspan="3" style="text-align: right;">Total IGV (18%)</td>
+                <td style="text-align: right;">{{venta.idPedido.igv_total}}</td>
+            </tr>
+            
+            <tr>
+                
+                <th colspan="3" style="text-align: right;">Total de la venta</th>
+                <td style="text-align: right;font-weight: bold;font-size: 11pt;">{{importe_total}}</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<br>
+<p style="font-size: 6pt;">Son <b>{{totaletra}}</b></p>
+<div style="text-align: center;">
+    <img src="data:image/png;base64,{{qr}}" alt="" style="width: 30%;">
+</div>
+<p style="text-align: center;">== Gracias por su preferencia ==</p>
+<style>
+    body{
+        font-size: 8pt;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .nonemargin{
+        margin: 0px;
+    }
+    table{
+        border-collapse: collapse;
+    }
+
+    thead {
+        border-bottom: solid 1px gray;
+    }
+    tbody {
+        border-bottom: solid 1px gray;
+    }
+    th, td {
+
+    }
+</style>
+</body>
+</html>

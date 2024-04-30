@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+      <ds:Signature Id="FePrimerSign">
+<ds:SignedInfo>
+  <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+  <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+  <ds:Reference URI="">
+    <ds:Transforms>
+      <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+    </ds:Transforms>
+    <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <ds:DigestValue>ezU/4Zvz5AnMY88GprdTW6a6jM8=</ds:DigestValue>
+  </ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>HZBrXU6sSQQE1rpdwyG/Ncwb6Q27X4UIcFEZCLi8odZmDvyO5f7Eju2FwKHp7nciQBhubsF+kiVikWqeOP0ZK1olQZjbStBN006QvYl0UilCP7fRRl+57nCqXCkw1ZitJYh1BluiLeCni89w4yClEOph0llXMKN9uHtu6VKzs1KP110LPkhuPz7I4YPu2qCFtrZZOaxiqveGHImk5y2kkYJA/InHVaysxf92oFX7FvE2gYorNh2pswO4iarYbcb3TX9UNMoVspQfsYJ8VvcP3oyi/R937AlgP/AvENBSdaDf4ThRE8toUif2BqvNNiamTxlVv48wOlS7r12l+nAfoA==</ds:SignatureValue>
+<ds:KeyInfo>
+    <ds:X509Data>
+        <ds:X509Certificate>MIID6zCCAtOgAwIBAgIUJB9kdlrtEuCWZW/hB+k6bt/FL7AwDQYJKoZIhvcNAQELBQAwgYQxCzAJBgNVBAYTAlBFMQ0wCwYDVQQIDARMSU1BMQ0wCwYDVQQHDARMSU1BMRgwFgYDVQQKDA9JTU0gQ09SUE9SQVRJT04xCzAJBgNVBAsMAklUMQwwCgYDVQQDDANJTU0xIjAgBgkqhkiG9w0BCQEWE2dpYW5zYWxleEBnbWFpbC5jb20wHhcNMjAwNzE5MjIwNDM2WhcNMzAwNTI4MjIwNDM2WjCBhDELMAkGA1UEBhMCUEUxDTALBgNVBAgMBExJTUExDTALBgNVBAcMBExJTUExGDAWBgNVBAoMD0lNTSBDT1JQT1JBVElPTjELMAkGA1UECwwCSVQxDDAKBgNVBAMMA0lNTTEiMCAGCSqGSIb3DQEJARYTZ2lhbnNhbGV4QGdtYWlsLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMjdt0KR5Bb/nIH1dGMKBkYlSHeScl5Go+KD4LEKDwi4hFcKvOI7XbNk1QoFmcKIPJuZvpBpqaadNRKidqAPxbrzMF+yxXI7QwlsVgweW+L64bXCtX4AlnRaCCIx0SrXYUrktVWWlQpaJGvF7n3Mbge+8P9jkyQ7XlAuVVRN2wk40G1UPWMYRVaVjas4JPh7eTft1B6R1d1njM5/dD3UJ0qSfgjw5b8FJae6Up5eEDAfcjkJihqVBtQHXI8yEHMRqx22OF8VsT+AsrylYGDpDesCz9WrF0cWpg3XNT1YUV5YfwqCNBK4vN++5qgA9Q+MYmE+KdZ0mFmMZxlm6NOeQfUCAwEAAaNTMFEwHQYDVR0OBBYEFLEP+8lmc8esD3bMYoSivwthb6gHMB8GA1UdIwQYMBaAFLEP+8lmc8esD3bMYoSivwthb6gHMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBACsrChqr7MpgEN0I+IqmgG4Kd4M5BBiz7jabnXMwcQfeduLL1RV7JkbI4EWF+SSpjpdojM35bxb8lyA43GpiFIaEAWa2frUJi/hXxvTn5eojwi6FU0zs7mHBHUSU+aOjBp/6TTnGR8LEemSJ1o7shaxHTaquNOHol/JV0QFTCn1hMPo44jpNwiDOngKDAc9TvQ3YUIURGrrE3j35c5KNGr4wDjjcjFky4OBhFRALU+9ff/Gergv03xyUDnfMtzYNomM15xO0jYou8FeQd7vzyh56ekJpI+EkX3YM/zABa/5NwXSpNK79gaWxS1SSuXrCZU4pqnVVy96V1zq5t1umbvA=</ds:X509Certificate>
+    </ds:X509Data>
+</ds:KeyInfo>
+</ds:Signature></ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>2.0</cbc:CustomizationID>
+  <cbc:ID>B001-24</cbc:ID>
+  <cbc:IssueDate>2024-04-24</cbc:IssueDate>
+  <cbc:IssueTime>13:38:56</cbc:IssueTime>
+  <cbc:InvoiceTypeCode listID="0101">03</cbc:InvoiceTypeCode>
+  <cbc:Note languageLocaleID="1000"><![CDATA[DOSCIENTOS SETENTA Y CUATRO CON NOVENTA Y CUATRO /100 SOLES]]></cbc:Note>
+  <cbc:DocumentCurrencyCode>PEN</cbc:DocumentCurrencyCode>
+  <cac:Signature>
+    <cbc:ID>26352637332</cbc:ID>
+    <cac:SignatoryParty>
+      <cac:PartyIdentification>
+        <cbc:ID>26352637332</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name><![CDATA[PASTELERIA ANJELO E.I.R.L]]></cbc:Name>
+      </cac:PartyName>
+    </cac:SignatoryParty>
+    <cac:DigitalSignatureAttachment>
+      <cac:ExternalReference>
+        <cbc:URI>#PASTELERIAANJELO-SIGN</cbc:URI>
+      </cac:ExternalReference>
+    </cac:DigitalSignatureAttachment>
+  </cac:Signature>
+  <cac:AccountingSupplierParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeID="6">26352637332</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name><![CDATA[PASTELERIA ANJELO]]></cbc:Name>
+      </cac:PartyName>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[PASTELERIA ANJELO E.I.R.L]]></cbc:RegistrationName>
+        <cac:RegistrationAddress>
+          <cbc:ID>16002</cbc:ID>
+          <cbc:AddressTypeCode>0000</cbc:AddressTypeCode>
+          <cbc:CitySubdivisionName>-</cbc:CitySubdivisionName>
+          <cbc:CityName>Maynas</cbc:CityName>
+          <cbc:CountrySubentity>Loreto</cbc:CountrySubentity>
+          <cbc:District>Iquitos</cbc:District>
+          <cac:AddressLine>
+            <cbc:Line><![CDATA[Calle San Martin]]></cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>PE</cbc:IdentificationCode>
+          </cac:Country>
+        </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:Telephone>98725252</cbc:Telephone>
+        <cbc:ElectronicMail>anjelo@anjelo.com</cbc:ElectronicMail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeID="1">123</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[delo]]></cbc:RegistrationName>
+      </cac:PartyLegalEntity>
+    </cac:Party>
+  </cac:AccountingCustomerParty>
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="PEN">41.94</cbc:TaxAmount>
+    <cac:TaxSubtotal>
+      <cbc:TaxableAmount currencyID="PEN">233.00</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="PEN">41.94</cbc:TaxAmount>
+      <cac:TaxCategory>
+        <cac:TaxScheme>
+          <cbc:ID>1000</cbc:ID>
+          <cbc:Name>IGV</cbc:Name>
+          <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+  </cac:TaxTotal>
+  <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="PEN">233.00</cbc:LineExtensionAmount>
+    <cbc:TaxInclusiveAmount currencyID="PEN">274.94</cbc:TaxInclusiveAmount>
+    <cbc:PayableAmount currencyID="PEN">274.94</cbc:PayableAmount>
+  </cac:LegalMonetaryTotal>
+  <cac:InvoiceLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="NIU">1.00</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="PEN">50.00</cbc:LineExtensionAmount>
+    <cac:PricingReference>
+      <cac:AlternativeConditionPrice>
+        <cbc:PriceAmount currencyID="PEN">59.00</cbc:PriceAmount>
+        <cbc:PriceTypeCode>01</cbc:PriceTypeCode>
+      </cac:AlternativeConditionPrice>
+    </cac:PricingReference>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">9.00</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">50.00</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">9.00</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>18.00</cbc:Percent>
+          <cbc:TaxExemptionReasonCode>10</cbc:TaxExemptionReasonCode>
+          <cac:TaxScheme>
+            <cbc:ID>1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description><![CDATA[Panesillos de coco]]></cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>None</cbc:ID>
+      </cac:SellersItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="PEN">50.00</cbc:PriceAmount>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>2</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="NIU">1.00</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="PEN">80.00</cbc:LineExtensionAmount>
+    <cac:PricingReference>
+      <cac:AlternativeConditionPrice>
+        <cbc:PriceAmount currencyID="PEN">94.40</cbc:PriceAmount>
+        <cbc:PriceTypeCode>01</cbc:PriceTypeCode>
+      </cac:AlternativeConditionPrice>
+    </cac:PricingReference>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">14.40</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">80.00</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">14.40</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>18.00</cbc:Percent>
+          <cbc:TaxExemptionReasonCode>10</cbc:TaxExemptionReasonCode>
+          <cac:TaxScheme>
+            <cbc:ID>1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description><![CDATA[PASTEL TRES LECHE]]></cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>None</cbc:ID>
+      </cac:SellersItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="PEN">80.00</cbc:PriceAmount>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>3</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="NIU">1.00</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="PEN">48.00</cbc:LineExtensionAmount>
+    <cac:PricingReference>
+      <cac:AlternativeConditionPrice>
+        <cbc:PriceAmount currencyID="PEN">56.64</cbc:PriceAmount>
+        <cbc:PriceTypeCode>01</cbc:PriceTypeCode>
+      </cac:AlternativeConditionPrice>
+    </cac:PricingReference>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">8.64</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">48.00</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">8.64</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>18.00</cbc:Percent>
+          <cbc:TaxExemptionReasonCode>10</cbc:TaxExemptionReasonCode>
+          <cac:TaxScheme>
+            <cbc:ID>1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description><![CDATA[PASTEL FRESA]]></cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>None</cbc:ID>
+      </cac:SellersItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="PEN">48.00</cbc:PriceAmount>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>4</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="NIU">1.00</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="PEN">55.00</cbc:LineExtensionAmount>
+    <cac:PricingReference>
+      <cac:AlternativeConditionPrice>
+        <cbc:PriceAmount currencyID="PEN">64.90</cbc:PriceAmount>
+        <cbc:PriceTypeCode>01</cbc:PriceTypeCode>
+      </cac:AlternativeConditionPrice>
+    </cac:PricingReference>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">9.90</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">55.00</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">9.90</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>18.00</cbc:Percent>
+          <cbc:TaxExemptionReasonCode>10</cbc:TaxExemptionReasonCode>
+          <cac:TaxScheme>
+            <cbc:ID>1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description><![CDATA[PASTEL CHOCOLATE]]></cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>None</cbc:ID>
+      </cac:SellersItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="PEN">55.00</cbc:PriceAmount>
+    </cac:Price>
+  </cac:InvoiceLine>
+</Invoice>
